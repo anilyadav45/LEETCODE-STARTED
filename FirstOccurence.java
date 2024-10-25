@@ -11,7 +11,7 @@ class Solution {
   }
 }
 
-class Main1{
+class FirstOccurence{
     public static void main(String a[]){
         String str = "a";
         String key = "a";
