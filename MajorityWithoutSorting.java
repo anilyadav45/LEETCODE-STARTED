@@ -1,7 +1,7 @@
 class Solution {
     public int majorityElement(int[] nums) {
         int curr = nums[0]; // Set the first element as the initial candidate
-        int count = 1; // Start the count at 1
+        int count = 1; // Start the count at 1 
 
         // Determine the most frequent candidate
         // Algorithm
@@ -32,7 +32,7 @@ class Solution {
         if (count > nums.length / 2) {
             return curr;
         }
-
+ //assume it alteast have 1 majority element 
         return 1;
     }
 }
