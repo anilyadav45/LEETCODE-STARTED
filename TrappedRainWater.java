@@ -7,16 +7,20 @@ class Solution {
         int prefixMax[] = new int[height.length];
         prefixMax[0] = height[0];
         for (int i = 1; i < height.length; i++) {
-            prefixMax[i] = Math.max(prefixMax[i - 1], height[i]); // take max till found max in entire arr from left -
-                                                                  // right
+            prefixMax[i] = Math.max(prefixMax[i - 1], height[i]); // fill the prefixMax arr from from left -
+                                                                  // right smaller to greater
         }
         // to find suffixMax for rightMax
         int n = height.length;
         int suffixMax[] = new int[height.length];
-        suffixMax[n-1] = height[n - 1]; // last element
+        suffixMax[n - 1] = height[n - 1]; // last element
         for (int i = n - 2; i >= 0; i--) {
-            suffixMax[i] = Math.max(suffixMax[i + 1], height[i]); // from last take two each time and find max
+            suffixMax[i] = Math.max(suffixMax[i + 1], height[i]); // fill the suffixMax arr specific greater to smaller
+                                                                  // value
         }
+        // this is how prefix and suffix arr look and compare with the height arr
+        // 0 1 1 2 2 2 2 3 3 3 3 3
+        // 3 3 3 3 3 3 3 3 2 2 2 1
         // to find units
         for (int i = 0; i < height.length; i++) {
             int leftMax = prefixMax[i];
