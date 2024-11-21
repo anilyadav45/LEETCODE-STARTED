@@ -1,6 +1,12 @@
 import java.util.*;
 
 class InterSection {
+    public  static void printArr(int arr[]) {
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
+    }
     public static int[] intersection(int[] nums1, int[] nums2) {
         // Use a HashSet to store unique elements from nums1
         Set<Integer> set1 = new HashSet<>();
@@ -26,8 +32,9 @@ class InterSection {
     }
     public static void main(String[] args) {
         int nums1[] = {1,2,3,2};
-        int num2[] = {2,3,4,4};
-        int res[]=intersection(nums1, nums1);
+        int nums2[] = {2,3,4,4};
+        int res[]=intersection(nums1, nums2);
+        printArr(res);
         
         
     }
