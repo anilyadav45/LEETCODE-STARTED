@@ -1,11 +1,11 @@
-class Solution {
+class LongestCommonPrefix {
     public String longestCommonPrefix(String[] strs) {
 
         if (strs == null || strs.length == 0) {
             return "";
         }
 
-        String prefix = strs[0];// taken first word in string arr
+        String prefix = strs[0]; // taken first word in string array
 
         for (int i = 1; i < strs.length; i++) {
             while (!strs[i].startsWith(prefix)) {
@@ -20,11 +20,9 @@ class Solution {
 
         return prefix;
     }
-}
 
-class longestCommonPrefix {
     public static void main(String[] args) {
-        Solution solution = new Solution();
+        LongestCommonPrefix solution = new LongestCommonPrefix();
 
         String[] example1 = { "flower", "flow", "flight" };
         System.out.println("Longest Common Prefix: " + solution.longestCommonPrefix(example1));
