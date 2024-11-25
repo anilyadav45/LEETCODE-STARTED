@@ -1,4 +1,4 @@
-class IsomorphicString {
+class IsoString {
     public String reverseVowels(String s) {
         // Convert the string to a character array
         char[] chars = s.toCharArray();
