@@ -29,7 +29,7 @@ public class SearchMatrix2 {
                            { 5, 13, 14 },
                            { 4, 11, 19 },
                            { 6, 8, 10 } };
-        int target = 5;
+        int target = 10;
         System.out.println(searchMatrix(matrix, target));
 
     }
