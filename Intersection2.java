@@ -1,4 +1,11 @@
 class Intersection2 {
+    public static void printlist(int arr[]) {
+        int i = 0;
+        while (i < arr.length) {
+            System.out.print(arr[i] + " ");
+            i++;
+        }
+    }
     public static int[] intersect(int[] nums1, int[] nums2) {
         // Temporary array to store intersection elements
         int[] temp = new int[Math.min(nums1.length, nums2.length)];
@@ -28,7 +35,8 @@ class Intersection2 {
         int nums1[] = {1,2,2,1};
         int nums2[] = {2,2};
         int res[] = intersect(nums1, nums2);
-        System.out.println(res);
+        printlist(res);
+        
 
     }
 }
