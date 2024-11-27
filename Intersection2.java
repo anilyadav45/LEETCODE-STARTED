@@ -1,4 +1,4 @@
-class Intersection {
+class Intersection2 {
     public int[] intersect(int[] nums1, int[] nums2) {
         // Temporary array to store intersection elements
         int[] temp = new int[Math.min(nums1.length, nums2.length)];
