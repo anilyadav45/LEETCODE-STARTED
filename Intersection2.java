@@ -1,5 +1,5 @@
 class Intersection2 {
-    public int[] intersect(int[] nums1, int[] nums2) {
+    public static int[] intersect(int[] nums1, int[] nums2) {
         // Temporary array to store intersection elements
         int[] temp = new int[Math.min(nums1.length, nums2.length)];
         int k = 0; // Index for temp array
@@ -23,5 +23,12 @@ class Intersection2 {
         System.arraycopy(temp, 0, result, 0, k);
 
         return result;
+    }
+    public static void main(String[] args) {
+        int nums1[] = {1,2,2,1};
+        int nums2[] = {2,2};
+        int res[] = intersect(nums1, nums2);
+        System.out.println(res);
+
     }
 }
