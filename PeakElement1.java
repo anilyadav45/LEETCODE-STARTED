@@ -30,3 +30,11 @@ class Solution {
         return 0;
     }
 }
+class PeakElement{
+    public static void main(String[] args) {
+        int nums[] = {1,2,3,4,2}; //4 is peak element
+        Solution obj = new Solution();
+        int ans = obj.findPeakElement(nums);
+        System.out.println(ans);
+    }
+}
