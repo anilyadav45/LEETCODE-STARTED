@@ -26,7 +26,7 @@ class Solution {
                 return 1;
             }
         }
-        // Case: nums has only 1 element
+        // Case: nums has only 1 elements
         return 0;
     }
 }
