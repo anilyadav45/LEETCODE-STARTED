@@ -2,7 +2,7 @@ class Solution {
     public int findPeakElement(int[] nums) {
         // Case: nums has at least 3 elements
         if (nums.length >= 3) {
-            // Check explicitly if the first or last element is a peak
+            // Check explicitly if the first or last element is a peak2
             if (nums[0] > nums[1]) {
                 return 0;
             }
