@@ -13,5 +13,9 @@ class Solution {
 }
 
 public class ReverseString {
-    
+    public static void main(String[] args) {
+        Solution obj = new Solution();
+        char [] s  = {'a','b','c','h','e'};
+        obj.reverseString(s);
+    }
 }
