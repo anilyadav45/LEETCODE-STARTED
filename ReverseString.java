@@ -17,5 +17,11 @@ public class ReverseString {
         Solution obj = new Solution();
         char [] s  = {'a','b','c','h','e'};
         obj.reverseString(s);
+        // System.out.println(s);
+        System.out.print("[");
+        for(int i=0; i<s.length; i++){
+            System.out.print(","+s[i]);
+        }
+        System.out.print("]");
     }
 }
