@@ -1,5 +1,5 @@
-class Solution {
-    public String addStrings(String num1, String num2) {
+class AddString {
+    public static String addStrings(String num1, String num2) {
         StringBuilder result = new StringBuilder();
         int i = num1.length() - 1; // Pointer for num1
         int j = num2.length() - 1; // Pointer for num2
@@ -19,9 +19,11 @@ class Solution {
         
         return result.reverse().toString(); // Reverse and return the result
     }
+   public static void main(String[] args) {
+    String s1 = "123";
+    String s2 = "2";
+    System.out.println(addStrings(s1, s2));
+   }
 }
 
 
-public class AddString {
-    
-}
