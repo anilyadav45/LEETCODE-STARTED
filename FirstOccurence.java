@@ -13,7 +13,7 @@ class Solution {
 
 class FirstOccurence{
     public static void main(String a[]){
-        String str = "a";
+        String str = "mmma";
         String key = "a";
         Solution s = new Solution();
         System.out.println(s.strStr(str,key));
