@@ -1,6 +1,6 @@
 //brute force we know it take O(n^2)
 
-//better - sort and check lastsmaller if equal count++
+//better - sort and check lastsmaller if equal count++ if equal skip if not equal update
 
 class Solution {
 
